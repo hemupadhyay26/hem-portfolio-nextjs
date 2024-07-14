@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
 import { GITHUB_URL, INSTAGRAM_URL, LINKEDIN_URL, X_URL } from "./components/SocialUrl";
+import { AboutTxt } from "./components/Content";
 
 export default function Home() {
   const handleDownload = () => {
@@ -34,13 +35,10 @@ export default function Home() {
           </h1>
           <div className="flex flex-col space-y-4 items-center sm:items-start w-full">
             <div className="text-sm sm:text-base text-center sm:text-left">
-              I'm Hem Chandra Upadhyay, a Computer Science graduate skilled in
-              data structures, algorithms, AWS Cloud, and DevOps. I've developed
-              various projects and am proficient in C++, Bash, Git, JavaScript,
-              SQL, and frameworks like ReactJS, React Native, and NodeJS.
+              {AboutTxt}
             </div>
             <div className="text-sm sm:text-base text-center sm:text-left">
-              This site visited <span className="dark:text-light-secondary text-dark-secondary">0</span> times.
+              This site visited <span className="dark:text-dark-secondary font-bold text-light-secondary">0</span> times.
             </div>
             <div className="flex space-x-2 justify-center sm:justify-start w-full">
               <Button
@@ -65,7 +63,6 @@ export default function Home() {
                 <GitHubIcon className="hover:text-dark-secondary transition-all duration-300 cursor-pointer" />
               </Link>
             </div>
-            {/* <ToogleBtn/> */}
           </div>
         </div>
       </div>

@@ -72,7 +72,7 @@
 }
 
 body {
-  background: linear-gradient(210deg, var(--color-primary) 70%, var(--color-secondary) 30%);
+  background: linear-gradient(315deg, var(--color-primary) 70%, var(--color-secondary) 30%);
   min-height: 100vh;
   min-width: 100vw;
   overflow: auto;
