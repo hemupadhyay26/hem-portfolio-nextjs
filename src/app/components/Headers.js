@@ -34,8 +34,8 @@ export default function Headers() {
         <NavbarItem>
           <Link
             color="foreground"
-            href="/"
-            className="text-dark-secondary hover:text-light-secondary transition-all duration-300 outline-none link-underline-grow"
+            href="/terminal"
+            className=" hover:text-light-secondary transition-all duration-300 outline-none link-underline-grow"
           >
             Ask Terminal
           </Link>

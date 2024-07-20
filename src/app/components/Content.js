@@ -14,7 +14,7 @@ export const LearnedTechnologies = [
     name: "Linux",
     proficiency: "90%",
     status: "ongoing",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png",
+    imageUrl: "./linux.svg",
   },
   {
     name: "Node.js",

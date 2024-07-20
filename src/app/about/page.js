@@ -18,7 +18,7 @@ export default function About() {
   };
 
   // State for managing visibility of sections
-  const [isSkillsOpen, setIsSkillsOpen] = useState(true); // Initially open on larger screens
+  const [isSkillsOpen, setIsSkillsOpen] = useState(false); // Initially open on larger screens
   const [isMobileView, setIsMobileView] = useState(false); // Track mobile view
 
   // Function to check if viewport is mobile size
