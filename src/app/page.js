@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center align-middle ml-0 sm:ml-10 space-y-6 w-full">
           <h1 className="text-2xl sm:text-3xl font-bold text-center">
-            Hi, I'm <DynamicText />
+            Hi, I&apos;m <DynamicText />
           </h1>
           <div className="flex flex-col space-y-4 items-center sm:items-start w-full">
             <div className="text-sm sm:text-base text-center sm:text-left">
@@ -50,16 +50,16 @@ export default function Home() {
               >
                 Download
               </Button>
-              <Link href={X_URL} passHref>
+              <Link href={X_URL} target="_blank" passHref>
                 <XIcon className="hover:text-dark-secondary transition-all duration-300 cursor-pointer" />
               </Link>
-              <Link href={LINKEDIN_URL} passHref>
+              <Link href={LINKEDIN_URL} target="_blank" passHref>
                 <LinkedInIcon className="hover:text-dark-secondary transition-all duration-300 cursor-pointer" />
               </Link>
-              <Link href={INSTAGRAM_URL} passHref>
+              <Link href={INSTAGRAM_URL} target="_blank" passHref>
                 <InstagramIcon className="hover:text-dark-secondary transition-all duration-300 cursor-pointer" />
               </Link>
-              <Link href={GITHUB_URL} passHref>
+              <Link href={GITHUB_URL} target="_blank" passHref>
                 <GitHubIcon className="hover:text-dark-secondary transition-all duration-300 cursor-pointer" />
               </Link>
             </div>

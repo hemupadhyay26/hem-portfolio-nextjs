@@ -75,7 +75,7 @@ body {
   background: linear-gradient(315deg, var(--color-primary) 70%, var(--color-secondary) 30%);
   min-height: 100vh;
   min-width: 100vw;
-  overflow: auto;
+  overflow-x: hidden;
   background-attachment: fixed;
   color: var(--color-grey-1);
 }

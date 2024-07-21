@@ -8,6 +8,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.js";
+import { GITHUB_URL } from "./SocialUrl.js";
 
 export default function Headers() {
   return (
@@ -34,8 +35,8 @@ export default function Headers() {
         <NavbarItem>
           <Link
             color="foreground"
-            href="/"
-            className="text-dark-secondary hover:text-light-secondary transition-all duration-300 outline-none link-underline-grow"
+            href="/terminal"
+            className=" hover:text-light-secondary transition-all duration-300 outline-none link-underline-grow"
           >
             Ask Terminal
           </Link>
@@ -43,7 +44,7 @@ export default function Headers() {
         <NavbarItem>
           <Link
             color="foreground"
-            href="/projects"
+            href={GITHUB_URL}
             className="dark:text-light-secondary hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
           >
             Projects
