@@ -11,11 +11,9 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { SkillItem } from "../components/SkillItem";
 import { Divider } from "@nextui-org/react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function About() {
-  const handleDownload = () => {
-    window.open("./Resume2Full.pdf", "_blank");
-  };
 
   // State for managing visibility of sections
   const [isSkillsOpen, setIsSkillsOpen] = useState(false); // Initially open on larger screens
@@ -111,15 +109,16 @@ export default function About() {
                 CGPA/MARK(%): {Graduation[1]} (2020-2024)
               </span>
             </div>
-            <Button
-              variant="contained"
-              color="success"
-              onClick={handleDownload}
-              startIcon={<DownloadIcon />}
-              size="small"
-            >
-              Download
-            </Button>
+            <Link href="https://drive.google.com/file/d/1OxeI-mx4WreLWpwUB_FucBAJKi-usoqf/view?usp=sharing" target="_blank">
+              <Button
+                variant="contained"
+                color="success"
+                startIcon={<DownloadIcon />}
+                size="small"
+              >
+                Download
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
