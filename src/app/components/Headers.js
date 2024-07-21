@@ -12,13 +12,13 @@ import { GITHUB_URL } from "./SocialUrl.js";
 
 export default function Headers() {
   return (
-    <Navbar className="flex justify-center p-5 border-dark-grey5 border-b-2 bg-dark-primary dark:bg-light-primary">
+    <Navbar className="flex justify-center p-5 border-dark-grey5 border-b-2 bg-dark-primary">
       <NavbarContent className="sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
             color="foreground"
             href="/"
-            className="dark:text-light-secondary hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
+            className=" hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
           >
             Home
           </Link>
@@ -27,7 +27,7 @@ export default function Headers() {
           <Link
             href="/about"
             aria-current="page"
-            className="dark:text-light-secondary hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
+            className=" hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
           >
             About
           </Link>
@@ -45,9 +45,9 @@ export default function Headers() {
           <Link
             color="foreground"
             href={GITHUB_URL}
-            className="dark:text-light-secondary hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
+            className=" hover:text-dark-secondary transition-all duration-300 outline-none link-underline-grow"
           >
-            Projects
+              Projects
           </Link>
         </NavbarItem>
       </NavbarContent>
